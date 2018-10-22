@@ -1,0 +1,36 @@
+package Screens;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class SignIn {
+
+    @FindBy(id ="SignIn")
+    private WebElement signIn;
+
+    @FindBy(linkText = "Your trips")
+    private WebElement yourTrips;
+
+    @FindBy(id = "signInButton")
+    private WebElement signInBtn;
+
+    @FindBy(id = "errors1")
+    private WebElement errors1;
+
+    public WebElement getSignIn(){
+        return signIn;
+    }
+
+    public WebElement getYourTrips(){
+        return yourTrips;
+    }
+
+    public WebElement getSignInBtn(){
+        return signInBtn;
+    }
+
+    public WebElement getErrors1(){
+        return errors1;
+    }
+
+}
