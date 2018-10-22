@@ -1,0 +1,70 @@
+package Screens;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class FlightBooking {
+
+    @FindBy(id = "OneWay")
+    private WebElement oneWay;
+
+    @FindBy(id = "FromTag")
+    private WebElement fromTag;
+
+    @FindBy(id = "ui-id-1")
+    private WebElement ui_id_1;
+
+    @FindBy(tagName = "li")
+    private WebElement tagName_li;
+
+    @FindBy(id = "toTag")
+    private WebElement toTag;
+
+    @FindBy(id = "ui-id-2")
+    private WebElement ui_id_2;
+
+    @FindBy(xpath = "//*[@id='ui-datepicker-div']/div[1]/table/tbody/tr[3]/td[7]/a")
+    private WebElement datePicker;
+
+    @FindBy(id = "SearchBtn")
+    private WebElement searchBtn;
+
+    @FindBy(className = "searchSummary")
+    private WebElement searchSummary;
+
+    public WebElement getOneWay() {
+        return oneWay;
+    }
+
+    public WebElement getFromTag() {
+        return fromTag;
+    }
+
+    public WebElement getUi_id_1() {
+        return ui_id_1;
+    }
+
+    public WebElement getLi(){
+        return tagName_li;
+    }
+
+    public WebElement getToTag(){
+        return toTag;
+    }
+
+    public WebElement getUi_id_2(){
+        return ui_id_2;
+    }
+
+    public WebElement getDatePicker(){
+        return datePicker;
+    }
+
+    public WebElement getSearchBtn(){
+        return searchBtn;
+    }
+
+    public WebElement getSearchSummary(){
+        return searchSummary;
+    }
+}
